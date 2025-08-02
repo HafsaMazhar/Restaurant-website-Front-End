@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business Website - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <div class="logo">My Business</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="auth-buttons">
+    <button onclick="openLogin()">Login</button>
+    <button onclick="openSignup()">Sign Up</button>
+  </div>
+</header>
+  <section class="hero">
+    <h1>Welcome to Our Restaurant</h1>
+    <p>Scroll down to explore more</p>
+  </section>
+<!-- Feature Sections -->
+<section class="features">
+  <div class="feature-box">
+    <a href="menu.html">
+      <img src="images/menu.jpg" alt="Menu" />
+      <h3>Menu</h3>
+    </a>
+  </div>
+  <div class="feature-box">
+    <a href="reservation.html">
+      <img src="images/reservation.jpg" alt="Reservation" />
+      <h3>Table Reservation</h3>
+    </a>
+  </div>
+  <div class="feature-box">
+    <a href="order.html">
+      <img src="images/order.jpg" alt="Order" />
+      <h3>Online Order</h3>
+    </a>
+  </div>
+</section>
+  <section class="scroll-section">Section 1: Rate the Taste</section>
+  <section class="scroll-section">Section 2: Feedback</section>
+  <section class="scroll-section">Section 3: Any opinion;</section>
+  <section class="scroll-section">Section 4: Thanks for being choosing us. </section>
+  <section class="scroll-section">Section 5</section>
+  <footer>
+    <p>&copy; 2025 MyBusiness. All rights reserved.</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="services.html">Services</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeLogin()">&times;</span>
+    <h2>Login</h2>
+    <input type="text" placeholder="Username"><br>
+    <input type="password" placeholder="Password"><br>
+    <button>Login</button>
+  </div>
+</div>
+
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeSignup()">&times;</span>
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="Username"><br>
+    <input type="email" placeholder="Email"><br>
+    <input type="password" placeholder="Password"><br>
+    <button>Sign Up</button>
+  </div>
+</div>
+  <script>
+    function openLogin() {
+      document.getElementById("loginModal").style.display = "block";
+    }
+
+    function closeLogin() {
+      document.getElementById("loginModal").style.display = "none";
+    }
+
+    function openSignup() {
+      document.getElementById("signupModal").style.display = "block";
+    }
+
+    function closeSignup() {
+      document.getElementById("signupModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
